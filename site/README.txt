@@ -1,0 +1,1 @@
+Projeto final com imagens e vídeos da web embutidos (referenciados). Contém 11 imagens locais placeholders, 4 vídeos do YouTube embedados, 3 ícones svg, styles/style.css, favicon.svg.

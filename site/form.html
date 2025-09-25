@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang='pt-BR'>
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Formulário - Venda Carros</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Montserrat:wght@400;700&family=Raleway:wght@300;600&family=Roboto+Slab:wght@400;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<nav><div class='container'><div class='logo'><img src='icons/chave-do-carro.png' 
+  alt='logo'><strong style='margin-left:8px'>Venda Carros</strong></div><div><a href='index.html'>Início</a><a href='about.html'>Sobre</a><a href='gallery.html'>Galeria</a><a href='contact.html'>Contato</a><a href='form.html'>Formulário</a></div></div></nav>
+
+
+<section class='section-c container'>
+  <h1>Formulário de Cadastro</h1>
+  <p>Preencha os dados do vendedor e do veículo.</p>
+  <form action='#' method='post' enctype='multipart/form-data'>
+    <fieldset><legend>Dados Pessoais</legend>
+      <label>Nome completo<input type='text' name='nome' required></label>
+      <label>E-mail<input type='email' name='email' required></label>
+      <label>Senha<input type='password' name='senha'></label>
+      <label>Telefone<input type='tel' name='telefone'></label>
+      <label>CPF<input type='text' name='cpf'></label>
+    </fieldset>
+
+    <fieldset><legend>Endereço</legend>
+      <label>Rua<input type='text' name='rua'></label>
+      <label>Número<input type='text' name='numero'></label>
+      <label>Bairro<input type='text' name='bairro'></label>
+      <label>Cidade<input type='text' name='cidade'></label>
+      <label>CEP<input type='text' name='cep'></label>
+    </fieldset>
+
+    <fieldset><legend>Dados do Veículo</legend>
+      <label>Marca<input type='text' name='marca'></label>
+      <label>Modelo<input type='text' name='modelo'></label>
+      <label>Ano<input type='number' name='ano'></label>
+      <label>Cor<input type='text' name='cor'></label>
+      <label>Quilometragem<input type='number' name='km'></label>
+    </fieldset>
+
+    <fieldset><legend>Características</legend>
+      <label>Combustível<select name='combustivel'><option>Gasolina</option><option>Flex</option><option>Diesel</option><option>Elétrico</option></select></label>
+      <label>Transmissão<select name='transm'><option>Manual</option><option>Automática</option></select></label>
+      <label>Itens de série<textarea name='itens' rows='2'></textarea></label>
+      <label>Fotos<input type='file' name='fotos' accept='image/*' multiple></label>
+      <label><input type='checkbox' name='termos' required> Aceito os termos</label>
+    </fieldset>
+
+    <button type='submit' style='background:var(--menu);color:white;padding:10px 16px;border:none;border-radius:6px'>Enviar</button>
+  </form>
+
+  
+  <div class='lists'>
+    <div><h4>Serviços</h4><ul><li>Avaliação</li><li>Laudo</li><li>Financiamento</li><li>Garantia</li></ul></div>
+    <div><h4>Regiões</h4><ol><li>São Paulo</li><li>Rio de Janeiro</li><li>Belo Horizonte</li></ol></div>
+    <div><h4>Destaques</h4><ul><li>Promoções</li><li>Ofertas</li><li>Feirão</li></ul></div>
+  </div>
+  <div class='lists' style='margin-top:12px'>
+    <div><h4>Dicas</h4><ol><li>Verificar documentos</li><li>Test-drive</li><li>Histórico</li></ol></div>
+    <div><h4>Perguntas</h4><ul><li>Como vender?</li><li>Quanto vale?</li><li>Financiamento?</li></ul></div>
+    <div><h4>Contato rápido</h4><ol><li>WhatsApp</li><li>Telefone</li><li>Email</li></ol></div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h3>Venda Carros</h3>
+        <p>Endereço: Avenida dos Automóveis, 1234 - Bairro Central, São Paulo/SP</p>
+        <p>Contato: contato@vendacarros.com | +55 11 99999-9999</p>
+      </div>
+      <div>
+        <h4>Links Rápidos</h4>
+        <ul class="quick-links">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="gallery.html">Galeria</a></li>
+          <li><a href="form.html">Cadastrar veículo</a></li>
+          <li><a href="contact.html">Fale conosco</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div>© 2025 Venda Carros — Todos os direitos reservados.</div>
+      <div class="footer-icons">
+         <a href="https://facebook.com" target="_blank"><img src="icons/facebook.png" alt="Facebook"></a>
+        <a href="https://instagram.com" target="_blank"><img src="icons/instagram.png" alt="Instagram"></a>
+        <a href="https://twitter.com" target="_blank"><img src="icons/twitter.png" alt="Twitter"></a>
+        <a href="https://wa.me/5511999999999" target="_blank"><img src="icons/whatsapp.png" alt="WhatsApp"></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
