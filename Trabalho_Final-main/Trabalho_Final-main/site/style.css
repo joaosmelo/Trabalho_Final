@@ -1,0 +1,53 @@
+:root{
+  /* Mude --brand-color para a cor exata da sua logo */
+  --brand-color: #0d6efd; /* padrão: azul bootstrap (substitua pelo hex da sua logo se quiser) */
+  --brand-contrast: #ffffff;
+  --muted: #6c757d;
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+
+*{box-sizing:border-box}
+body{font-family:var(--font-family, 'Inter', sans-serif);background:#fff;color:#222}
+
+/* NAV */
+.navbar-brand img{object-fit:cover}
+
+/* HERO */
+.hero{
+  background: linear-gradient(180deg, rgba(13,110,253,0.12), rgba(13,110,253,0.04));
+  min-height: 320px;
+}
+
+/* Buttons primary custom using brand color */
+.btn-primary{
+  background: var(--brand-color);
+  border-color: var(--brand-color);
+}
+.btn-primary:hover{
+  filter:brightness(.94);
+}
+
+/* Cards and images */
+.card-img-top{height:240px;object-fit:cover}
+
+/* Social icon hover */
+.social-icon img{filter:grayscale(100%);opacity:.9;transition:all .18s}
+.social-icon:hover img{filter:none;transform:translateY(-3px);opacity:1}
+
+/* Footer */
+footer{font-size:.95rem;color:var(--muted)}
+
+/* Responsividade extra */
+@media (max-width:767px){
+  .hero{padding:3rem 1rem}
+}
+
+/* Small utility to match logo palette quickly */
+.text-brand{color:var(--brand-color) !important}
+.bg-brand{background:var(--brand-color);color:var(--brand-contrast)}
+
+/* Carousel item centering */
+.carousel-item > .d-flex { padding: 1rem 0; align-items:center; }
+
+/* Form focus accessible */
+.form-control:focus{box-shadow:0 0 0 .15rem rgba(13,110,253,0.15)}

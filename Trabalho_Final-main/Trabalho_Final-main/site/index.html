@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Início - Venda Carros</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Local stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="icons/chave-do-carro.png" alt="logo" width="44" height="44" class="rounded me-2">
+        <span class="fw-bold">Venda Carros</span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Galeria</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">Equipe</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contato</a></li>
+        </ul>
+
+        <!-- Social icons -->
+        <div class="d-flex ms-lg-3 mt-3 mt-lg-0">
+          <a href="#" class="me-2 social-icon" title="Facebook"><img src="icons/facebook.png" alt="fb" width="28"></a>
+          <a href="#" class="me-2 social-icon" title="Instagram"><img src="icons/instagram.png" alt="ig" width="28"></a>
+          <a href="#" class="me-2 social-icon" title="Twitter"><img src="icons/twitter.png" alt="tw" width="28"></a>
+          <a href="#" class="social-icon" title="WhatsApp"><img src="icons/whatsapp.png" alt="wa" width="28"></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero bg-dark text-light d-flex align-items-center">
+    <div class="container text-center py-5">
+      <h1 class="display-5 fw-bold">Encontre o carro dos seus sonhos</h1>
+      <p class="lead mb-4">Carros usados e seminovos com garantia e atendimento personalizado.</p>
+      <a href="gallery.html" class="btn btn-primary btn-lg">Ver Galeria</a>
+    </div>
+  </header>
+
+  <main class="container my-5">
+    <!-- Serviços -->
+    <section class="row align-items-center mb-5">
+      <div class="col-md-6">
+        <h2>Nossos Serviços</h2>
+        <p>Venda, compra e consultoria completa. Financiamento e garantia estendida. Atendimento profissional e entrega rápida.</p>
+        <ul class="list-unstyled">
+          <li class="mb-2">✓ Análise completa do veículo</li>
+          <li class="mb-2">✓ Financiamento sob medida</li>
+          <li class="mb-2">✓ Transporte e documentação</li>
+        </ul>
+      </div>
+      <div class="col-md-6 text-center">
+        <img src="images/carros.jpg" alt="carros" class="img-fluid rounded shadow-sm">
+      </div>
+    </section>
+
+    <!-- Carousel de Depoimentos -->
+    <section class="mb-5">
+      <h2 class="mb-4">Depoimentos</h2>
+
+      <div id="depoimentosCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="d-flex flex-column flex-md-row align-items-center gap-4">
+              <img src="images/3.jpg" class="rounded-circle" alt="cliente1" width="120" height="120">
+              <div>
+                <p class="mb-1 fst-italic">"Excelente atendimento, carro em ótimo estado e entrega rápida!"</p>
+                <strong>— João Silva</strong>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="d-flex flex-column flex-md-row align-items-center gap-4">
+              <img src="images/1.jpeg" class="rounded-circle" alt="cliente2" width="120" height="120">
+              <div>
+                <p class="mb-1 fst-italic">"Ótimos preços e negociação super transparente."</p>
+                <strong>— Maria Fernandes</strong>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="d-flex flex-column flex-md-row align-items-center gap-4">
+              <img src="images/2.png" class="rounded-circle" alt="cliente3" width="120" height="120">
+              <div>
+                <p class="mb-1 fst-italic">"Recomendo! Serviço de qualidade e pós-venda impecável."</p>
+                <strong>— Carlos Pereira</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#depoimentosCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#depoimentosCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+          <span class="visually-hidden">Próximo</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Chamada para equipe -->
+    <section class="mb-5 text-center">
+      <h3>Conheça nossa equipe</h3>
+      <p>Profissionais experientes prontos para ajudar você.</p>
+      <a href="about.html" class="btn btn-outline-primary">Ver Equipe</a>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-light py-4">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+      <div class="mb-3 mb-md-0">© <span id="anoAtual"></span> Venda Carros</div>
+      <div>
+        <a href="#" class="me-3"><img src="icons/facebook.png" alt="fb" width="24"></a>
+        <a href="#" class="me-3"><img src="icons/instagram.png" alt="ig" width="24"></a>
+        <a href="#" class="me-3"><img src="icons/twitter.png" alt="tw" width="24"></a>
+        <a href="#"><img src="icons/whatsapp.png" alt="wa" width="24"></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS (CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    // colocar ano atual no footer
+    document.getElementById('anoAtual').innerText = new Date().getFullYear();
+  </script>
+</body>
+</html>
